@@ -38,7 +38,7 @@ def generate_recommendation(nome, relacao_profissional, habilidades, realizacoes
 
     return chat_completion.choices[0].message.content
 
-# Interface do Streamlit
+# Interface do Streamlits
 st.set_page_config(page_title="Gerador de Recomendações do LinkedIn", page_icon=":robot:")
 
 st.title("🤖 PDSAcademy - Gerador de Recomendações do LinkedIn")
