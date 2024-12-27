@@ -25,12 +25,13 @@ def generate_message(my_experiences, recruiter_name, job_description):
                 "content": f"Escreva uma mensagem em inglês de conexão com obrigatoriamente até 200 carecteres para o recrutador {recruiter_name} sobre a vaga com a seguinte descrição: {job_description}",
             }
         ],
-        model="llama3-8b-8192",
+        model="gemma2-9b-it",
     )
 
     return chat_completion.choices[0].message.content
 
-st.title("🤖 Gerador de Mensagem de Conexão no LinkedIn")
+st.set_page_config(page_title="Gerador de Mensagem de Conexão no LinkedIn", page_icon=":robot:")
+st.title("🤖 PDSAcademy - Gerador de Mensagem de Conexão no LinkedIn")
 st.write("Este aplicativo gera mensagens curtas de conexão no LinkedIn para recrutadores que estão em busca de profissionais de TI.")
 st.write("O objetivo é chamar a atenção do recrutador e despertar o interesse dele em você como candidato. 🚀")
 
