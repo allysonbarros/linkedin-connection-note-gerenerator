@@ -38,9 +38,6 @@ st.write("O objetivo é chamar a atenção do recrutador e despertar o interesse
 st.subheader("Insira os detalhes da vaga e do recrutador")
 
 my_experiences = st.text_area("Resumo Profissional", height=200)
-
-st.subheader("Insira os detalhes da vaga e do recrutador")
-
 recruiter_name = st.text_input("Nome do Recrutador")
 job_description = st.text_area("Descrição da Vaga", height=200)
 
